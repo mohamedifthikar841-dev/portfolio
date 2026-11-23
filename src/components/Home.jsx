@@ -1,29 +1,33 @@
-
 function Home() {
   return (
-    <section className="home" id="home">
+    <section className="home section" id="home">
 
       <div className="home-content">
-        <p>Hello, I'm</p>
+        <p className="welcome">WELCOME TO MY PORTFOLIO</p>
 
-        <h1>Mohamed Ifthikar</h1>
+        <h1>
+          Hi, I'm <span>Mohamed Ifthikar</span>
+        </h1>
 
-        <h3>Student | Web Developer</h3>
+        <h2>Student | Frontend Developer</h2>
 
         <p>
-          I am a college student interested in
-          web development and programming.
-          I enjoy learning new technologies
-          and creating simple websites.
+          I am a passionate college student interested in web development,
+          programming and modern technologies. I enjoy creating websites
+          and learning new technologies.
         </p>
 
-        <a href="#contact" className="btn">
-          Contact Me
-        </a>
+        <div className="home-buttons">
+          <a href="#projects" className="btn">View My Work</a>
+          <a href="#contact" className="btn btn-outline">Contact Me</a>
+        </div>
       </div>
 
-      <div className="profile">
-        <img src="/src/assets/hero.png" alt="My profile" />
+      <div className="profile-card">
+        <div className="profile-circle">MI</div>
+        <h2>Mohamed Ifthikar</h2>
+        <p>Future Software Developer</p>
+        <div className="available">● Open to Opportunities</div>
       </div>
 
     </section>

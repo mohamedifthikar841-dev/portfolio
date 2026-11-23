@@ -1,82 +1,56 @@
-
 function Contact() {
   return (
     <section className="section contact" id="contact">
 
-      <h2>Contact Me</h2>
-
-      <p className="contact-intro">
-        Have a project or an opportunity?
-        Feel free to contact me.
-      </p>
+      <p className="section-subtitle">LET'S CONNECT</p>
+      <h2 className="section-title">Contact <span>Me</span></h2>
 
       <div className="contact-container">
 
         <div className="contact-info">
+          <h3>Let's Work Together</h3>
 
-          <h3>Let's Connect</h3>
+          <p>
+            Have an idea or opportunity? Feel free to contact me.
+            I would be happy to connect with you.
+          </p>
 
-          <p> Email</p>
-          <a href="mailto:mohamedifthikar841@gmail.com">
-            mohamedifthikar841@gmail.com
-          </a>
-
-          <p> Phone</p>
-          <a href="tel:+917871200737">
-            +91 7871200737
-          </a>
-
-          <p> Location</p>
-          <span>Tamil Nadu, India</span>
+          <p>📧 Your email address</p>
+          <p>📍 Tamil Nadu, India</p>
 
           <div className="social-links">
-            <a href="https://github.com/"
-               target="_blank"
-               rel="noreferrer">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
               GitHub
             </a>
 
-            <a href="https://linkedin.com/"
-               target="_blank"
-               rel="noreferrer">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
               LinkedIn
             </a>
           </div>
-
         </div>
 
-        <form className="contact-form"
+        <form
+          className="contact-form"
           onSubmit={(e) => {
             e.preventDefault();
             alert("Thank you for contacting me!");
-          }}>
+            e.target.reset();
+          }}
+        >
+          <input type="text" placeholder="Your Name" required />
 
-          <input
-            type="text"
-            placeholder="Your Name"
-            required
-          />
+          <input type="email" placeholder="Your Email" required />
 
-          <input
-            type="email"
-            placeholder="Your Email"
-            required
-          />
+          <input type="text" placeholder="Subject" required />
 
-          <textarea
-            placeholder="Your Message"
-            rows="5"
-            required
-          ></textarea>
+          <textarea placeholder="Your Message" rows="5" required />
 
-          <button type="submit">
+          <button type="submit" className="btn">
             Send Message
           </button>
-
         </form>
 
       </div>
-
     </section>
   );
 }

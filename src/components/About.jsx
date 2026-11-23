@@ -1,23 +1,54 @@
-
 function About() {
   return (
-    <section className="section" id="about">
+    <section className="section about" id="about">
 
-      <h2>About Me</h2>
+      <p className="section-subtitle">GET TO KNOW ME</p>
+      <h2 className="section-title">About <span>Me</span></h2>
 
-      <p>
-        Hello! I am Mohamed Ifthikar.
-        I am a college student passionate
-        about technology and web development.
+      <div className="about-content">
 
-        I am currently learning HTML, CSS,
-        JavaScript and React.
+        <div className="about-card">
+          <h3>Who Am I?</h3>
 
-        My goal is to become a skilled
-        software developer and build
-        useful real-world applications.
-      </p>
+          <p>
+            Hello! I am Mohamed Ifthikar, a college student passionate
+            about technology and web development.
+          </p>
 
+          <p>
+            I am currently learning HTML, CSS, JavaScript and React.
+            I enjoy developing websites and improving my programming skills.
+          </p>
+
+          <p>
+            My goal is to become a skilled software developer and
+            build useful real-world applications.
+          </p>
+        </div>
+
+        <div className="about-details">
+          <div className="detail-box">
+            <h3>01</h3>
+            <p>Creative Thinking</p>
+          </div>
+
+          <div className="detail-box">
+            <h3>02</h3>
+            <p>Problem Solving</p>
+          </div>
+
+          <div className="detail-box">
+            <h3>03</h3>
+            <p>Continuous Learning</p>
+          </div>
+
+          <div className="detail-box">
+            <h3>04</h3>
+            <p>Teamwork</p>
+          </div>
+        </div>
+
+      </div>
     </section>
   );
 }

@@ -1,8 +1,7 @@
-
 function Navbar() {
   return (
     <nav className="navbar">
-      <h2>Ifthikar.</h2>
+      <h2 className="logo">Ifthikar<span>.</span></h2>
 
       <ul>
         <li><a href="#home">Home</a></li>
